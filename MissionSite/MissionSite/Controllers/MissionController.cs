@@ -15,7 +15,7 @@ namespace MissionSite.Controllers
             return View();
         }
 
-        public ActionResult IndMissionFAQ (string MissNumber)
+        public ActionResult MissionFAQ (string MissNumber)
         {
             ViewBag.Mission_Name = MissNumber;
             if (MissNumber == "1")
