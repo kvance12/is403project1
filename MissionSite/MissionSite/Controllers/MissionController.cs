@@ -8,16 +8,34 @@ namespace MissionSite.Controllers
 {
     public class MissionController : Controller
     {
-        // GET: Mission
+
+        // GET: Default
         public ActionResult Mission()
         {
             return View();
         }
 
-        public ActionResult MissionFAQ()
+        public ActionResult MissionFAQ(string MissNumber)
         {
-             return View();
+            ViewBag.Mission_Name = MissNumber;
+            if (MissNumber == "1")
+            {
+                ViewBag.MissionName = "WIsconsin";
+            }
+
+
+            else if (MissNumber == "2")
+            {
+                ViewBag.MissionName = "Peru";
+            }
+
+            else
+            {
+                ViewBag.MissionName = "Sydney";
+            }
+            return View();
         }
+
     }
 
    

@@ -5,3 +5,22 @@
 
 <h2>Mission</h2>
 
+<div class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        Missions
+        <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+        <li>@Html.ActionLink("Missions Info Page", "Index", "Missions")</li>
+        <li class=" divider"></li>
+        <li>@Html.ActionLink("Wisconsin Milwaukee Mission", "MissionFAQ", "Mission", new { MissNumber = 1 }, null)</li>
+        <li>@Html.ActionLink("Cusco Peru Mission", "MissionFAQ", "Mission", new { MissNumber = 2 }, null)</li>
+        <li>@Html.ActionLink("Sydney South", "MissionFAQ", "Mission", new { MissNumber = 3 }, null)</li>
+
+
+    </ul>
+
+</div>
+<h2>CategoryChosen</h2>
+
+
