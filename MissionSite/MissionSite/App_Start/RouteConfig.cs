@@ -11,6 +11,18 @@ namespace MissionSite
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
+            //////testing new route
+            //routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            //routes.MapRoute(
+            //    "Mission",
+            //    "MissionFAQ/{StateNames}",
+            //    new { controller = "MissionFAQ", action = "MissionFAQ" }
+            //    );
+            
+            
+            
+            
+            
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
