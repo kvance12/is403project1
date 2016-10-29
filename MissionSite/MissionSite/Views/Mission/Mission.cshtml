@@ -2,6 +2,7 @@
 @{
     ViewBag.Title = "Mission";
 }
+<a href="@Url.Action("Index", "Home")">Home >> </a> Mission
 
 <h2>Mission</h2>
 
@@ -32,9 +33,9 @@
     <ul class="dropdown-menu">
         <li>@Html.ActionLink("Missions Info Page", "Index", "Missions")</li>
         <li class=" divider"></li>
-        <li>@Html.ActionLink("Wisconsin Milwaukee Mission", "IndMissionFAQ", "Mission", new {MissNumber = 1}, null)</li>
-        <li>@Html.ActionLink("Cusco Peru Mission", "IndMissionFAQ", "Mission", new {MissNumber = 2}, null)</li>
-        <li>@Html.ActionLink("Sydney South", "IndMissionFAQ", "Mission", new {MissNumber = 3}, null)</li>
+        <li>@Html.ActionLink("Wisconsin Milwaukee Mission", "MissionFAQ", "Mission", new {MissNumber = 1}, null)</li>
+        <li>@Html.ActionLink("Cusco Peru Mission", "MissionFAQ", "Mission", new {MissNumber = 2}, null)</li>
+        <li>@Html.ActionLink("Sydney South", "MissionFAQ", "Mission", new {MissNumber = 3}, null)</li>
 
 
     </ul>

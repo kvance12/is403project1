@@ -11,8 +11,11 @@
         }
     </style>
 </head>
+<a href="@Url.Action("Index", "Home")">Home >> </a>
+<a href="@Url.Action("Mission", "Mission")">Mission >> </a> MissionFAQs
+
 <h1>Mission FAQ's</h1>
-<h2>Mission Name</h2>
+<h2>@ViewBag.MissionName</h2>
 <div class="container">
     <br>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -26,16 +29,16 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img class="caro" src="~/Content/Pictures/Australia/sydney1.jpg" alt="Chania">
+                <img class="caro" src="@ViewBag.Pic1" alt="Chania">
             </div>
             <div class="item">
-                <img class="caro" src="~/Content/Pictures/Australia/sydney2.jpg" alt="Chania">
+                <img class="caro" src="@ViewBag.Pic2" alt="Chania">
             </div>
             <div class="item">
-                <img class="caro" src="~/Content/Pictures/Australia/sydney3.jpg" alt="Flower">
+                <img class="caro" src="@ViewBag.Pic3" alt="Flower">
             </div>
             <div class="item">
-                <img class="caro" src="~/Content/Pictures/Australia/sydney4.jpg" alt="Flower">
+                <img class="caro" src="@ViewBag.Pic4" alt="Flower">
             </div>
         </div>
         <!-- Left and right controls -->
@@ -54,35 +57,35 @@
     <div class="row">
         <div class="col-md-6 line textcenter">
             <div>
-                <img class="Pres piccenter" src="~/Content/Pictures/Australia/back.jpeg" />
+                <img class="Pres piccenter" src="@ViewBag.PresidentPic" />
                 <br />
-                Mission President: President Daryl Back
+                @ViewBag.President
                 <br />
-                President's Wife: Sister Mary Anne Back
+                @ViewBag.Wife
             </div>
             <br />
             <br />
-            <img class="flag piccenter" src="~/Content/Pictures/Australia/AustraliaFlad.png" />
+            <img class="flag piccenter" src="@ViewBag.Flag" />
         </div>
         <div class="col-md-6 missfact backdrop">
             <p>
-                <h5 class="labelsize">Address:</h5>Sydney South Mission
+                <h5 class="labelsize">Address:</h5>
+
+                @ViewBag.Street
                 <br />
-                PO Box 456
+                @ViewBag.City
                 <br />
-                Mortdale NSW 2223
-                <br />
-                Australia
+                @ViewBag.Country
                 <br />
                 <h5 class="labelsize">Languages:</h5>
-                English, Spanish, Tongan, Mandarian, Cantonese, Samoan
+                @ViewBag.Language
                 <br />
                 <h5 class="labelsize">Climate:</h5>
-                Winters: Chilly, rare snow
+                @ViewBag.Winter
                 <br />
-                Summers: Humid, Extremely Hot, Rainy
+                @ViewBag.Summer
                 <h5 class="labelsize">Dominate Religion:</h5>
-                <br /> Athiest
+                @ViewBag.Religion
             </p>
         </div>
     </div>

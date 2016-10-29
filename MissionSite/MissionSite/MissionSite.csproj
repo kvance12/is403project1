@@ -153,11 +153,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="App_Start\FilterConfig.cs" />
-    <Compile Include="App_Start\IdentityConfig.cs" />
-    <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Content\App_Start\BundleConfig.cs" />
+    <Compile Include="Content\App_Start\FilterConfig.cs" />
+    <Compile Include="Content\App_Start\IdentityConfig.cs" />
+    <Compile Include="Content\App_Start\RouteConfig.cs" />
+    <Compile Include="Content\App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -187,6 +187,12 @@
     <Content Include="Content\Pictures\elders.jpeg" />
     <Content Include="Content\Pictures\KVII-E Vence.jpg" />
     <Content Include="Content\Pictures\Laurie Furber.jpg" />
+    <Content Include="Content\Pictures\Milwaukee\Cutler.jpeg" />
+    <Content Include="Content\Pictures\Milwaukee\Wisconsin_1.jpg" />
+    <Content Include="Content\Pictures\Milwaukee\Wisconsin_2.jpg" />
+    <Content Include="Content\Pictures\Milwaukee\Wisconsin_3.jpg" />
+    <Content Include="Content\Pictures\Milwaukee\Wisconsin_4.jpg" />
+    <Content Include="Content\Pictures\Milwaukee\Wisconsin_flag.jpg" />
     <Content Include="Content\Pictures\Peru\Peru1.jpeg" />
     <Content Include="Content\Pictures\Peru\peru2.jpeg" />
     <Content Include="Content\Pictures\Peru\peru3.jpg" />
