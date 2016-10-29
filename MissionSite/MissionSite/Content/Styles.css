@@ -1,0 +1,49 @@
+﻿body {
+}
+
+
+.homepic{
+    height: 250px;
+    width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textcenter
+{
+    text-align: center;
+}
+
+#JumboPic{
+    background-image: url('/Content/Pictures/Baptism.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 600px;
+}
+
+.black{
+    color: black;
+}
+
+#headtext
+{
+     text-shadow:
+     -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+
+#labeltext{
+    text-decoration: underline;
+}
+
+.Aboutpic{
+    height:250px;
+    width: 200px;
+}
+
+.Arial{
+    font-family: Arial;
+}
