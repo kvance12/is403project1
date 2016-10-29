@@ -172,6 +172,12 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Pictures\Australia\AustraliaFlad.png" />
+    <Content Include="Content\Pictures\Australia\back.jpeg" />
+    <Content Include="Content\Pictures\Australia\sydney1.jpg" />
+    <Content Include="Content\Pictures\Australia\sydney2.jpg" />
+    <Content Include="Content\Pictures\Australia\sydney3.jpg" />
+    <Content Include="Content\Pictures\Australia\sydney4.jpg" />
     <Content Include="Content\Pictures\Baptism.png" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -179,7 +185,14 @@
     <Content Include="Content\Pictures\elders.jpeg" />
     <Content Include="Content\Pictures\KVII-E Vence.jpg" />
     <Content Include="Content\Pictures\Laurie Furber.jpg" />
+    <Content Include="Content\Pictures\Peru\Peru1.jpeg" />
+    <Content Include="Content\Pictures\Peru\peru2.jpeg" />
+    <Content Include="Content\Pictures\Peru\peru3.jpg" />
+    <Content Include="Content\Pictures\Peru\peru4.jpg" />
+    <Content Include="Content\Pictures\Peru\peruflag.GIF" />
+    <Content Include="Content\Pictures\Peru\perupres.jpg" />
     <Content Include="Content\Pictures\quote.jpg" />
+    <Content Include="Content\Pictures\Screen Shot 2016-10-29 at 12.12.32 PM.png" />
     <Content Include="Content\Pictures\sisters.jpeg" />
     <Content Include="Content\Pictures\Stefon Todderidge.jpg" />
     <Content Include="Content\Styles.css" />
@@ -237,6 +250,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Mission\Mission.cshtml" />
+    <Content Include="Views\Mission\MissionFAQ.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

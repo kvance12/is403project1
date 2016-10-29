@@ -47,3 +47,80 @@
 .Arial{
     font-family: Arial;
 }
+
+#aboutpar
+{   font-family: 'Times New Roman';
+    font-size: 20px;
+     border-radius: 5px 20px 5px;
+    background: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+hr
+{
+    background-color: #eee;
+    border: 0 none;
+    color: #eee;
+    height: 1px;
+}
+
+.logo{
+    height: 50px;
+    width: 70px;
+}
+
+#corn{
+    background-color: cornflowerblue;
+}
+
+.missfact {
+  border-radius: 10px;
+  background: black;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 410px;
+  padding-left: 30px;
+}
+
+.flag{
+    width: 350px;
+    height: 200px;
+    margin-bottom: 100px;
+}
+.Pres{
+    height: 210px;
+    width: 200px;
+
+}
+
+.line{
+   border-right: thick solid;
+}
+
+.backdrop{
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.space{
+    padding-bottom: 50px;
+}
+
+.labelsize{
+    font-size: 30px;
+}
+
+.caro{
+    width: 800px !important;
+    height: 345px !important;
+}
+
+.piccenter
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
