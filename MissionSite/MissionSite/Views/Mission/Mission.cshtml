@@ -1,25 +1,27 @@
-﻿
+﻿@* View for the Mission home page  *@
+
 @{
     ViewBag.Title = "Mission";
     <link href="~/Content/Styles.css" rel="stylesheet" />
 }
+<br /> <br />
 <a href="@Url.Action("Index", "Home")">Home >> </a> Mission
 
 
-    <div class="jumbotron">
-        <div id="jumbowheatpic">
-        <h1>Missions</h1>
-        <p>
+ <div class="jumbotron opacity1" id="jumbowheatpic">
+    
+        <h1 class="opacity1">Missions</h1>
+        <p class="opacity1">
             <em>"Now behold, a marvelous work is about to come forth among the children of men. Therefore, O ye that embark in the service of God, see that ye serve him with all your heart, might, mind and strength, that ye may stand blameless before God at the last day.
 Therefore, if ye have desires to serve God ye are called to the work;" </em>
         </p>
-            </div>
-    </div>
+            
+</div>
     
 
 <h2>Choose a Mission</h2>
 
-
+@* dropdown to chooose mission *@
 <div class="dropdown">
     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
         Missions

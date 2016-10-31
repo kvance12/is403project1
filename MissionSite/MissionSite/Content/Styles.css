@@ -140,9 +140,9 @@ hr
     height: 345px !important;
 
 }
-#jumbowheatpic
-{
-    background-color: yellow ; !important
+#jumbowheatpic {
+    color: black;
+    background-image: url('Pictures/wheat.png');
 }
 .piccenter
 {
@@ -150,4 +150,10 @@ hr
     margin-left: auto;
     margin-right: auto;
 }
+
+#toptop
+{
+   padding-top: 50px;
+}
+
 

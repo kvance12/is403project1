@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿
+
+using System.ComponentModel.DataAnnotations;
 namespace MVCEmail.Models
 {
     public class EmailFormModel
@@ -10,6 +12,7 @@ namespace MVCEmail.Models
         [Required, Display(Name = "Subject")]
         public string FromSubject { get; set; }
         [Required]
-        public string Message { get; set; }
+        public string Message { get; set; }     
+       public string Question { get; set; }
     }
 }

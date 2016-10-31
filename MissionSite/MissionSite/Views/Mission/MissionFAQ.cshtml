@@ -1,4 +1,6 @@
-﻿@{
+﻿@* html for the MissionFAQ.  Has the corresponding view bags *@
+
+@{
     ViewBag.Title = "MissionFAQ";
 }
 <head>
@@ -15,6 +17,7 @@
 <a href="@Url.Action("Index", "Home")">Home >> </a>
 <a href="@Url.Action("Mission", "Mission")">Mission >> </a> MissionFAQs
 
+@* carousel *@
 <h1>Mission FAQ's</h1>
 <h2>@ViewBag.MissionName</h2>
 <div class="container">
@@ -91,3 +94,93 @@
         </div>
     </div>
 </div>
+
+
+@* Map*@
+<iframe class="piccenter" id="toptop" width="600" height="450" frameborder="0" style="border:0" src="@ViewBag.Source" allowfullscreen></iframe>
+@model MVCEmail.Models.EmailFormModel
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Question, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextAreaFor(m => m.Question, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Question)
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-default" value="Submit" />
+        </div>
+    </div>
+
+}
+
+@* comment box *@
+<p>What is serving a mission like?</p>
+<div class="container">
+    <div class="row">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".demo-popup7">Reply</button>
+        <!-- popup box modal starts here -->
+        <div class="modal fade demo-popup7" tabindex="-2" role="dialog" aria-labelledby="myLargeModalLabel-2" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> <h3 class="modal-title">Leave a reply:</h3>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" name="reply" id="reply" placeholder="Your Reply">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal-->
+        <!-- popup box modal ends -->
+    </div> <!-- /.row -->
+</div> <!-- /.container -->
+<p>What is the best way to study Preach My Gospel?</p>
+<div class="container">
+    <div class="row">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".demo-popup2">Reply</button>
+        <!-- popup box modal starts here -->
+        <div class="modal fade demo-popup2" tabindex="-2" role="dialog" aria-labelledby="myLargeModalLabel-2" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            Close&times;
+                        </button> <h3 class="modal-title">Leave a reply:</h3>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" name="reply" id="reply" placeholder="Your Reply">
+                        <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-hidden="true">Submit</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal-->
+        <!-- popup box modal ends -->
+    </div> <!-- /.row -->
+</div> <!-- /.container -->
+<p>What do you do when someone offers you food that you hate?</p>
+<div class="container">
+    <div class="row">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".demo-popup3">Reply</button>
+        <!-- popup box modal starts here -->
+        <div class="modal fade demo-popup3" tabindex="-2" role="dialog" aria-labelledby="myLargeModalLabel-2" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            Close&times;
+                        </button> <h3 class="modal-title">Leave a reply:</h3>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" name="reply" id="reply" placeholder="Your Reply">
+                        <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-hidden="true">Submit</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal-->
+        <!-- popup box modal ends -->
+    </div> <!-- /.row -->
+</div> <!-- /.container -->

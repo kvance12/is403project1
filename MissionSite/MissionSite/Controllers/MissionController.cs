@@ -1,4 +1,7 @@
-﻿using System;
+﻿//
+//Controller to choose the mission
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -15,6 +18,7 @@ namespace MissionSite.Controllers
             return View();
         }
 
+        //If statement for the 3 different missions and their viewbags
         public ActionResult MissionFAQ (string MissNumber)
         {
             ViewBag.Mission_Name = MissNumber;
@@ -36,6 +40,8 @@ namespace MissionSite.Controllers
                 ViewBag.Pic2 = "/Content/Pictures/Milwaukee/Wisconsin_2.jpg";
                 ViewBag.Pic3 = "/Content/Pictures/Milwaukee/Wisconsin_3.jpg";
                 ViewBag.Pic4 = "/Content/Pictures/Milwaukee/Wisconsin_4.jpg";
+                ViewBag.Source = "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJr-OEkw_0qFIR1kmG-LjV1fI&key=AIzaSyDHkSckF7J0xgBlozb1AKVqMz5WdbbHFRk";
+               
               
 
             }
@@ -59,6 +65,7 @@ namespace MissionSite.Controllers
                 ViewBag.Pic2 = "/Content/Pictures/Peru/peru2.jpeg";
                 ViewBag.Pic3 = "/Content/Pictures/Peru/peru3.jpg";
                 ViewBag.Pic4 = "/Content/Pictures/Peru/peru4.jpg";
+                ViewBag.Source = "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJMYRZJtjVbZERXTEYI8yWqSo&key=AIzaSyDHkSckF7J0xgBlozb1AKVqMz5WdbbHFRk";
             }
             else
             {
@@ -78,10 +85,11 @@ namespace MissionSite.Controllers
                 ViewBag.Pic2 = "/Content/Pictures/Australia/sydney2.jpg";
                 ViewBag.Pic3 = "/Content/Pictures/Australia/sydney3.jpg";
                 ViewBag.Pic4 = "/Content/Pictures/Australia/sydney4.jpg";
+                ViewBag.Source = "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJP5iLHkCuEmsRwMwyFmh9AQU&key=AIzaSyDHkSckF7J0xgBlozb1AKVqMz5WdbbHFRk";
             }
             return View();
         }
     }
 
-   
+  
 }
