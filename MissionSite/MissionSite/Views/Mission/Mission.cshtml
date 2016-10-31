@@ -1,28 +1,23 @@
 ﻿
 @{
     ViewBag.Title = "Mission";
+    <link href="~/Content/Styles.css" rel="stylesheet" />
 }
 <a href="@Url.Action("Index", "Home")">Home >> </a> Mission
 
-<h2>Mission</h2>
 
-@{
-    ViewBag.Title = "Category Select";
-}
-
-@*@using (Html.BeginForm("CategoryChosen", "Default", FormMethod.Get))
-{
-    <fieldset>
-        US States
-        
-            @Html.DropDownList("Mission_Name")
-        
+    <div class="jumbotron">
+        <div id="jumbowheatpic">
+        <h1>Missions</h1>
         <p>
-            <a href="@Url.Action("More Info","MissionFAQ", "Mission", new { Mission_Name = @ViewBag.messageString})">Submit</a>
-</p>
-</fieldset>
-}*@
+            <em>"Now behold, a marvelous work is about to come forth among the children of men. Therefore, O ye that embark in the service of God, see that ye serve him with all your heart, might, mind and strength, that ye may stand blameless before God at the last day.
+Therefore, if ye have desires to serve God ye are called to the work;" </em>
+        </p>
+            </div>
+    </div>
+    
 
+<h2>Choose a Mission</h2>
 
 
 <div class="dropdown">
@@ -31,8 +26,7 @@
         <span class="caret"></span>
     </a>
     <ul class="dropdown-menu">
-        <li>@Html.ActionLink("Missions Info Page", "Index", "Missions")</li>
-        <li class=" divider"></li>
+        
         <li>@Html.ActionLink("Wisconsin Milwaukee Mission", "MissionFAQ", "Mission", new {MissNumber = 1}, null)</li>
         <li>@Html.ActionLink("Cusco Peru Mission", "MissionFAQ", "Mission", new {MissNumber = 2}, null)</li>
         <li>@Html.ActionLink("Sydney South", "MissionFAQ", "Mission", new {MissNumber = 3}, null)</li>
@@ -41,4 +35,3 @@
     </ul>
 
 </div>
-<h2>CategoryChosen</h2>
