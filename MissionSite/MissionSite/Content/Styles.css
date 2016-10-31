@@ -138,6 +138,11 @@ hr
 .caro{
     width: 800px !important;
     height: 345px !important;
+
+}
+#jumbowheatpic
+{
+    background-color: yellow ; !important
 }
 .piccenter
 {
@@ -146,7 +151,3 @@ hr
     margin-right: auto;
 }
 
-#jumbowheatpic
-{
-    background-color: yellow;
-}
